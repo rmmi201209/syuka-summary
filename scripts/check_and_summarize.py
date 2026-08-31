@@ -251,9 +251,7 @@ def main():
 
     print(f"[INFO] Batch processing finished. {processed_count} new summaries created.")
     
-    # 5. 메일 발송 프로세스를 위해 저장된 데이터 전달 목적으로 임시 출력 남김
     if saved_entries:
-        # 이 출력값은 나중에 다른 래퍼 스크립트나 CI/CD 환경에서 감지하여 메일 발송 대상으로 삼을 수 있습니다.
         print(f"[METADATA] NEW_SUMMARIES_COUNT={len(saved_entries)}")
 
 if __name__ == "__main__":
